@@ -2,18 +2,18 @@
 
     class Routing {
     
-        private    static     $headcomment = '
+        private static $headcomment = '
 # ROUTING - DO NOT CHANGE!
 ';
-        private    static     $content     = '
+        private static     $content     = '
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !/content/*
-RewriteRule .? routing.php
+RewriteRule .? index.php
 
 ';
-        private    static     $footcomment = '# ENDROUTING
-';
+        private static $footcomment = '# ENDROUTING
+'; 
     
         public static function enableRouting() {
         
