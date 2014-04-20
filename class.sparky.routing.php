@@ -68,7 +68,7 @@ RewriteRule .? index.php
 			} 
 			
 	        $routes 	= explode('/', $variables[0]);
-			var_dump($_SESSION);
+
 	        return array_diff( $routes, array( '' ) );
 	        
         }
